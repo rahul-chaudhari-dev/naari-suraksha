@@ -44,8 +44,6 @@ NaariSuraksha/
 │   ├── JSP files
 └── README.md
 
-
-
 ---
 
 ## ⚙️ Setup Instructions  
