@@ -35,14 +35,16 @@ Naari Suraksha is a **Java-based web application** aimed at enhancing women’s 
 
 ---
 
-
 ## 📁 Project Structure  
+
+```
 NaariSuraksha/
 ├── src/
 │   └── com.naarisuraksha.*   (Servlets, Model, DBConnect)
 ├── WebContent/ or webapp/
 │   ├── JSP files
 └── README.md
+```
 
 ---
 
@@ -50,7 +52,7 @@ NaariSuraksha/
 
 ### 🔧 Prerequisites  
 - Java JDK 8+  
-- MySQL 
+- MySQL or PostgreSQL  
 - Apache Tomcat (v7+)  
 - Eclipse or IntelliJ IDE  
 
@@ -58,42 +60,38 @@ NaariSuraksha/
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/rahul-chaudhari-dev/naari-suraksha.git
-   
-2 **Import the project into your IDE as a Dynamic Web Project.**
+   git clone https://github.com/yourusername/naari-suraksha.git
+   ```
 
-3 **Set up the database**
-*Create a new database: naarisurakshaDB
-*Run the SQL script naarisurakshaDB.sql
-*Update DB credentials in DBConnection.java
+2. **Import the project** into your IDE as a Dynamic Web Project.  
 
-4. **Deploy to Tomcat**
-*Add project to Tomcat server
-*Start server and open in browser:`http://localhost:8080/NaariSuraksha/`
+3. **Set up the database**  
+   - Create a new database: `naarisurakshaDB`  
+   - Run the SQL script `naarisurakshaDB.sql`  
+   - Update DB credentials in `DBConnection.java`  
 
----
-
-📂 SQL File (Database Schema)
-
-Included SQL script: naarisurakshaDB.sql
-
-Tables:
-
-users (id, name, address, contact, email, password)
-
-alerts (id, user_id, location, alert_type, description, date, status, Message)
-
-admin (id, email, password, role)
-
-👩‍💻 Author
-
-Rahul Chaudhari
-Java Developer | Full-Stack Web Development Enthusiast
-GitHub • LinkedIn
-
-```
+4. **Deploy to Tomcat**  
+   - Add project to Tomcat server  
+   - Start server and open in browser:  
+     ```
+     http://localhost:8080/NaariSuraksha/
+     ```
 
 ---
 
+## 📂 SQL File (Database Schema)  
 
+**Included SQL script:** `naarisurakshaDB.sql`  
 
+Tables:  
+- `users` (id, name, contact, email, password, location)  
+- `alerts` (id, user_id, location, alert_type, status, created_at)  
+- `admins` (id, name, email, password, role)  
+
+---
+
+## 👩‍💻 Author  
+
+**Komal Mahajan**  
+Java Developer | Full-Stack Web Development Enthusiast  
+[GitHub](https://github.com/yourusername) • [LinkedIn](https://www.linkedin.com/in/your-link)  
