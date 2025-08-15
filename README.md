@@ -40,7 +40,7 @@ Naari Suraksha is a **Java-based web application** aimed at enhancing women’s 
 ```
 NaariSuraksha/
 ├── src/
-│   └── com.naarisuraksha.*   (Servlets, Model, DBConnect)
+│   └── com.naarisuraksha.* (Servlets, Model, DBConnect)
 ├── WebContent/ or webapp/
 │   ├── JSP files
 └── README.md
@@ -52,7 +52,7 @@ NaariSuraksha/
 
 ### 🔧 Prerequisites  
 - Java JDK 8+  
-- MySQL or PostgreSQL  
+- MySQL  
 - Apache Tomcat (v7+)  
 - Eclipse or IntelliJ IDE  
 
@@ -60,7 +60,7 @@ NaariSuraksha/
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/yourusername/naari-suraksha.git
+   git clone https://github.com/rahul-chaudhari-dev/naari-suraksha.git
    ```
 
 2. **Import the project** into your IDE as a Dynamic Web Project.  
@@ -84,14 +84,14 @@ NaariSuraksha/
 **Included SQL script:** `naarisurakshaDB.sql`  
 
 Tables:  
-- `users` (id, name, contact, email, password, location)  
-- `alerts` (id, user_id, location, alert_type, status, created_at)  
-- `admins` (id, name, email, password, role)  
+- `users` (id, name, address, contact, email, password)  
+- `alerts` (id, user_id, location, alert_type,description, date, status, message)  
+- `admins` (id, email, password, role)  
 
 ---
 
 ## 👩‍💻 Author  
 
-**Komal Mahajan**  
+**Rahul Chaudhari**  
 Java Developer | Full-Stack Web Development Enthusiast  
-[GitHub](https://github.com/yourusername) • [LinkedIn](https://www.linkedin.com/in/your-link)  
+[GitHub](https://github.com/rahul-chaudhari-dev) • [LinkedIn](https://www.linkedin.com/in/rahul-chaudhari-496b22369)  
