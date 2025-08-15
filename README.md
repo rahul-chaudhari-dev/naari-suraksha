@@ -37,12 +37,13 @@ Naari Suraksha is a **Java-based web application** aimed at enhancing women’s 
 
 
 ## 📁 Project Structure  
-NaariSuraksha
+NaariSuraksha/
 ├── src/
-│ └── com.naari.suraksha.* (Servlets, Model, DBConnect)
+│   └── com.naarisuraksha.*   (Servlets, Model, DBConnect)
 ├── WebContent/ or webapp/
-│ ├── JSP files
+│   ├── JSP files
 └── README.md
+
 
 
 ---
