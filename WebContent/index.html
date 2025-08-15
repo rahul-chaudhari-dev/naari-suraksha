@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-yHcMeYemLQhWm4HGuFgLbrM8YuHkEYqO7+uKwD6nE9Wh6IPAZUqK6Z2cDGRbUNyoLZ5BoYpUnb7KkCgkF+0z1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe3ec, #f8bbd0);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #ad1457;
+      margin-bottom: 40px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px #f8bbd0;
+    }
+
+    .card-group {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .login-card {
+      width: 320px;
+      padding: 30px;
+      background: rgba(255, 240, 245, 0.5);
+      border: 1px solid rgba(255, 182, 193, 0.6);
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(240, 98, 146, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .login-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 30px rgba(233, 30, 99, 0.3);
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: #ec407a;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+      background-color: #c2185b;
+    }
+
+    .fa-icon {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome To Naari Suraksha</h1>
+
+  <div class="card-group">
+    <div class="login-card">
+      <a href="admin.html">
+        <i class="fas fa-user-shield fa-icon"></i>Login As Admin
+      </a>
+    </div>
+
+    <div class="login-card">
+      <a href="User.html">
+        <i class="fas fa-user fa-icon"></i>Login As User
+      </a>
+    </div>
+
+    <div class="login-card">
+      <a href="Police.html">
+        <i class="fas fa-user-secret fa-icon"></i>Login As Police
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>

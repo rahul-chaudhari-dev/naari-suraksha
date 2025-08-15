@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Police Login</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1a0e75, #3a1fd4);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    width: 540px; /* Increased from 350px to 420px */
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .login-box h2 {
+    color: #1a0e75;
+    margin-bottom: 30px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .login-box label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .login-box input {
+    width: 100%;
+    padding: 14px; /* Slightly taller */
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+
+  .login-box button {
+    width: 100%;
+    padding: 14px; /* Matches input height */
+    background-color: #ff4b5c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-sizing: border-box;
+    margin-top:15px;
+  }
+
+  .login-box button:hover {
+    background-color: #e63e4d;
+  }
+</style>
+</head>
+<body>
+
+<div class="login-box">
+  <h2><i class="fas fa-user-shield"></i> &nbspPolice Login</h2>
+  <form action="PoliceLoginServlet" method="post">
+    <label for="email">Enter Email</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="password">Enter Password</label>
+    <input type="password" name="password" id="password" required>
+
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+</body>
+</html>

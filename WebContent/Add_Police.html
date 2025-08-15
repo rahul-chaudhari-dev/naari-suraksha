@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Add Police Officer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome for icon (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #020024 0%, #3434CF 73%, #15C3E6 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-card {
+      background-color: rgba(255, 255, 255, 0.95); /* Soft translucent white */
+      padding: 40px 35px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      width: 500px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #3434CF;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 18px;
+      font-size: 14px;
+      transition: border 0.3s ease;
+    }
+
+ input[type="text"] {
+  width: 100%;
+  padding: 12px 15px; /* uniform padding */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  box-sizing: border-box; /* fix padding calculation */
+  transition: border 0.3s ease;
+}
+
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3434CF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2a2ab0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form-card">
+    <h2>Add Police Officer</h2>
+    <form action="Add_Police" method="post">
+      <label for="pusername">Enter Officer Name</label>
+      <input type="text" name="pusername" id="pusername" required>
+
+      <label for="pstation">Enter Police Station</label>
+      <input type="text" name="pstation" id="pstation" required>
+
+      <label for="pcontact">Enter Contact</label>
+      <input type="text" name="pcontact" id="pcontact" required>
+
+      <label for="pemail">Enter Email</label>
+      <input type="text" name="pemail" id="pemail" required>
+
+      <label for="ppassword">Enter Password</label>
+      <input type="text" name="ppassword" id="ppassword" required>
+
+      <button type="submit"><i class="fas fa-user-plus"></i> Add Police Officer</button>
+    </form>
+  </div>
+
+</body>
+</html>
